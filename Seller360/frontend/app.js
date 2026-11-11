@@ -1,5 +1,4 @@
-
-const API = "http://127.0.0.1:8000/api";
+const API = "https://seller360-ai-virtual-kam.onrender.com/api";
 
 let conversation = [];
 let recognition = null;
