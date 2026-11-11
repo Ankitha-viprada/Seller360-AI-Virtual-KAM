@@ -1,0 +1,31 @@
+{
+  "seller": {
+    "seller_id": "SD-10482",
+    "business_name": "Aarav Fashion House",
+    "seller_name": "Aarav",
+    "category": "Fashion & Lifestyle",
+    "city": "Jaipur",
+    "joined_on": "2023-04-12"
+  },
+  "periods": {
+    "last_month": {
+      "sales": 200000,
+      "orders": 400,
+      "cancellation_rate": 8,
+      "average_selling_price": 500,
+      "out_of_stock_products": 5
+    },
+    "this_month": {
+      "sales": 135000,
+      "orders": 270,
+      "cancellation_rate": 14,
+      "average_selling_price": 500,
+      "out_of_stock_products": 18
+    }
+  },
+  "assumptions": [
+    "The supplied sample figures are treated as month-over-month seller performance.",
+    "No product-level inventory, traffic, conversion, or cancellation-reason data was supplied.",
+    "Recommendations are diagnostic suggestions, not confirmed root causes or completed actions."
+  ]
+}

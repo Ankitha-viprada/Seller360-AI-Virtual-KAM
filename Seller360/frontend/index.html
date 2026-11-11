@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Seller360 | AI Virtual KAM</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand"><div class="brand-mark">S</div><div><b>seller<span>360</span></b><small>AI VIRTUAL KAM</small></div></div>
+      <div class="workspace-label">WORKSPACE</div>
+      <nav>
+        <button class="nav-item active" data-tab="overview"><span>▦</span> Overview</button>
+        <button class="nav-item" data-tab="voice"><span>◉</span> AI Voice KAM <i class="live-dot"></i></button>
+        <button class="nav-item" data-tab="insights"><span>⌁</span> Business insights</button>
+        <button class="nav-item" data-tab="actions"><span>✓</span> Action planner</button>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="help-card"><div class="help-icon">✦</div><b>Your business, understood.</b><p>Talk to your AI account manager and turn data into your next move.</p><button id="sidebarTalk">Start a conversation ↗</button></div>
+        <div class="profile"><div class="avatar">AF</div><div><b>Aarav Fashion House</b><small>Seller ID · SD-10482</small></div><span>•••</span></div>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar"><div><div class="eyebrow">SELLER WORKSPACE <span>/</span> <b id="crumb">OVERVIEW</b></div><h1 id="pageTitle">Good evening, Aarav <span class="wave">✦</span></h1><p id="pageSub">Here’s what’s happening with your business this month.</p></div><div class="top-actions"><div class="status"><i></i> AI KAM online</div><button class="icon-btn" title="Notifications">♧<em></em></button><div class="top-avatar">AF</div></div></header>
+
+      <section class="tab-panel active" id="overview">
+        <div class="alert-banner"><div class="alert-symbol">!</div><div><b>Your sales need attention</b><p>Sales are down 32.5% this month. Your AI KAM has identified a few areas worth investigating.</p></div><button class="text-link" data-go="insights">View diagnosis <span>→</span></button></div>
+        <div class="section-heading"><div><h2>Business snapshot</h2><p>Month-over-month performance · Sample seller data</p></div><span class="period-pill">This month <span>⌄</span></span></div>
+        <div class="metrics-grid">
+          <article class="metric-card"><div class="metric-top"><span>Total sales</span><span class="metric-icon purple">₹</span></div><strong id="salesValue">₹1,35,000</strong><div class="metric-change down">↘ 32.5% <small>vs last month</small></div><div class="mini-bars"><i style="height:50%"></i><i style="height:62%"></i><i style="height:58%"></i><i style="height:76%"></i><i style="height:65%"></i><i style="height:43%"></i><i style="height:30%"></i></div></article>
+          <article class="metric-card"><div class="metric-top"><span>Orders</span><span class="metric-icon blue">▣</span></div><strong>270</strong><div class="metric-change down">↘ 32.5% <small>vs last month</small></div><div class="metric-foot">Last month <b>400</b></div></article>
+          <article class="metric-card"><div class="metric-top"><span>Cancellation rate</span><span class="metric-icon orange">↗</span></div><strong>14%</strong><div class="metric-change down">↑ 6 pp <small>vs last month</small></div><div class="metric-foot">Last month <b>8%</b></div></article>
+          <article class="metric-card"><div class="metric-top"><span>Out-of-stock products</span><span class="metric-icon red">▤</span></div><strong>18</strong><div class="metric-change down">↑ 13 products <small>vs last month</small></div><div class="metric-foot">Last month <b>5</b></div></article>
+        </div>
+        <div class="content-grid">
+          <article class="panel sales-panel"><div class="panel-head"><div><h3>Sales performance</h3><p>Last month vs this month</p></div><span class="legend"><i class="dot-lilac"></i> Last month <i class="dot-violet"></i> This month</span></div><div class="chart"><div class="y-labels"><span>₹2.0L</span><span>₹1.5L</span><span>₹1.0L</span><span>₹0.5L</span><span>₹0</span></div><div class="chart-area"><div class="grid-lines"><i></i><i></i><i></i><i></i><i></i></div><div class="bar-group"><div class="bar old" style="height:92%"><b>₹2.0L</b></div><div class="bar new" style="height:62%"><b>₹1.35L</b></div></div><div class="x-labels"><span>Sales revenue</span></div></div></div></article>
+          <article class="panel focus-panel"><div class="panel-head"><div><h3>AI focus areas</h3><p>What needs your attention</p></div><span class="sparkle">✦</span></div><div class="focus-item"><span class="focus-number red-bg">01</span><div><b>Inventory gaps</b><small>13 additional products out of stock</small></div><span class="priority high">HIGH</span></div><div class="focus-item"><span class="focus-number orange-bg">02</span><div><b>Order cancellations</b><small>Cancellation rate up by 6 pp</small></div><span class="priority high">HIGH</span></div><div class="focus-item"><span class="focus-number blue-bg">03</span><div><b>Product discovery</b><small>Review visibility and conversion</small></div><span class="priority medium">MEDIUM</span></div><button class="full-link" data-go="voice">Discuss with your AI KAM <span>→</span></button></article>
+        </div>
+        <div class="bottom-note"><span>✦</span><div><b>One useful observation</b><p>Your average selling price stayed at ₹500 in both periods. The decline is showing up in order volume, so let's investigate availability, cancellations and discovery before changing prices.</p></div></div>
+      </section>
+
+      <section class="tab-panel" id="voice">
+        <div class="voice-layout">
+          <article class="panel voice-panel">
+            <div class="voice-heading"><span class="ai-badge">✦ AI VIRTUAL KAM</span><span class="secure">● Demo workspace</span></div>
+            <div class="voice-intro"><div class="orb-wrap"><div class="orb"><span>✦</span></div><div class="orb-ring ring-one"></div><div class="orb-ring ring-two"></div></div><h2>Your business partner,<br><em>always listening.</em></h2><p>Tell me what’s happening with your business. We’ll figure it out together.</p></div>
+            <div class="voice-state" id="voiceState">Ready when you are</div>
+            <div class="waveform" id="waveform"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+            <button class="mic-button" id="micButton" aria-label="Start voice conversation"><span>🎙</span></button>
+            <div class="mic-hint" id="micHint">Tap to speak · Tap again to stop</div>
+            <div class="voice-controls"><button id="muteButton" class="subtle-btn">◖ Sound on</button><button id="endButton" class="subtle-btn">End conversation</button></div>
+            <div class="voice-notice" id="voiceNotice">Voice works best in Chrome or Edge. Allow microphone access when prompted.</div>
+          </article>
+          <article class="panel conversation-panel"><div class="panel-head"><div><h3>Conversation</h3><p>Your discussion with Seller360</p></div><button class="clear-btn" id="clearChat">Clear ↻</button></div><div class="chat-messages" id="chatMessages"><div class="message assistant"><div class="message-avatar">✦</div><div><span class="message-name">SELLER360 · AI KAM</span><div class="bubble">Hi Aarav! I'm your Virtual Key Account Manager. I noticed your sales are down 32.5% this month. Let's understand why and build a recovery plan together. Have you noticed any issues with stock availability or order cancellations?</div><small>Just now</small></div></div></div><form id="chatForm" class="chat-form"><input id="chatInput" placeholder="Type a message if you prefer..." autocomplete="off"><button type="submit">↑</button></form><div class="chat-foot">Voice-first experience · Text is available as a fallback</div></article>
+        </div>
+      </section>
+
+      <section class="tab-panel" id="insights">
+        <div class="section-heading"><div><h2>Business diagnosis</h2><p>Signals detected from your supplied seller data</p></div><span class="ai-badge">✦ AI ANALYSIS</span></div>
+        <div class="insight-grid" id="insightGrid"><article class="insight-card"><span class="insight-icon red-bg">↘</span><span class="priority high">HIGH SIGNAL</span><h3>Sales and order volume declined</h3><p>Sales fell 32.5%, and orders also fell 32.5%. Average selling price is unchanged.</p><small>Observed in sample data</small></article><article class="insight-card"><span class="insight-icon orange-bg">!</span><span class="priority high">HIGH SIGNAL</span><h3>Cancellation rate increased</h3><p>Cancellation rate moved from 8% to 14%, an increase of 6 percentage points.</p><small>Reason not provided</small></article><article class="insight-card"><span class="insight-icon blue-bg">▤</span><span class="priority high">HIGH SIGNAL</span><h3>More products are unavailable</h3><p>Out-of-stock products increased from 5 to 18 — 13 additional products.</p><small>Inventory detail not provided</small></article></div>
+        <div class="bottom-note"><span>ⓘ</span><div><b>Evidence, not assumptions</b><p>The data points to inventory and cancellation issues worth investigating. It does not include traffic, impressions, SKU-level sales or cancellation reasons, so those causes are not yet confirmed.</p></div></div>
+      </section>
+
+      <section class="tab-panel" id="actions">
+        <div class="section-heading"><div><h2>Your recovery action plan</h2><p>Prioritised next steps based on the performance signals</p></div><button class="outline-btn" id="summaryButton">✦ Generate summary</button></div>
+        <div class="action-list" id="actionList">
+          <article class="action-card"><div class="action-check"><input type="checkbox"></div><div class="action-main"><div class="action-meta"><span class="priority high">HIGH PRIORITY</span><span>INVENTORY</span></div><h3>Restore availability of high-demand products</h3><p>Review the 13 additional out-of-stock products and replenish the best-selling SKUs first.</p><small>Why it matters: unavailable products cannot convert demand into orders.</small></div><span class="action-arrow">↗</span></article>
+          <article class="action-card"><div class="action-check"><input type="checkbox"></div><div class="action-main"><div class="action-meta"><span class="priority high">HIGH PRIORITY</span><span>OPERATIONS</span></div><h3>Investigate the cancellation increase</h3><p>Group recent cancellations by seller rejection, stock mismatch, dispatch delay or customer cancellation.</p><small>Why it matters: cancellation rate rose from 8% to 14%.</small></div><span class="action-arrow">↗</span></article>
+          <article class="action-card"><div class="action-check"><input type="checkbox"></div><div class="action-main"><div class="action-meta"><span class="priority medium">MEDIUM PRIORITY</span><span>DISCOVERY</span></div><h3>Improve discovery and listing quality</h3><p>Review titles, images, attributes and competitive pricing for products that are in stock.</p><small>Why it matters: check whether fewer customers discover or convert on your listings.</small></div><span class="action-arrow">↗</span></article>
+        </div>
+        <div id="summaryBox" class="summary-box hidden"><div class="summary-title">✦ Seller conversation summary</div><p id="summaryText"></p><button class="copy-btn" id="copySummary">Copy summary</button></div>
+      </section>
+      <footer>Seller360 is an independent prototype built with mock data · Not an official Snapdeal product</footer>
+    </main>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
